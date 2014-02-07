@@ -48,4 +48,22 @@ public class Pound
         double mean = total / (double)puppies.size();
         return mean;
     }
+
+    public Puppy getCutest()
+    {
+        Puppy bestPuppy = null;
+        int bestScore = 0;
+
+        for (int i=0; i<puppies.size();i++)
+        {
+            Puppy current = puppies.get(i);
+            if (current.cuteness > bestScore)
+            {
+                bestPuppy = current;
+                bestScore = current.cuteness;
+            }
+        }
+
+        return bestPuppy;
+    }
 }

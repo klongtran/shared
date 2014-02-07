@@ -48,6 +48,8 @@ public class Application
         System.out.println("Average Height:   " + puppyHouse.getMeanHeight());
         System.out.println("Average Weight:   " + puppyHouse.getMeanWeight());
         System.out.println("Average Cuteness: " + puppyHouse.getMeanCuteness());
+
+        System.out.println("The cutest puppy is " + puppyHouse.getCutest());
     }
 }
 
